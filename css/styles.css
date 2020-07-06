@@ -1,0 +1,226 @@
+/*---google fonts---*/
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lobster&family=Lobster+Two&family=Montserrat&family=Open+Sans:wght@300&family=Patua+One&family=Rubik&family=Sniglet&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*-----variables---*/
+croot {
+    --open-sans: "open sans", sans serif;
+    --snigle-font: "sniglet", cursive;
+    --patua: "Patua One", cursive;
+    --rubik: "Rubik", sans-serif;
+    --lobster: "Lobster Two", cursive;
+    --lobster: "Lobster", cursive;
+    --montserrat: "Montserrat", sans-serif;
+    --cedarville: "Cedarville Cursive", cursive;
+
+}
+
+header {
+    background-color: teal;
+}
+
+/*---navigation----*/
+
+#container-fluid {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+
+.navbar-brand p {
+    height: 0 5px;
+    padding-left: 5px;
+
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+
+
+}
+
+.navbar-nav li a {
+    float: right;
+    text-align: left;
+
+}
+
+#container-fluid ul li a:hover {
+    background: white;
+    color: teal !important;
+    border-radius: 20%;
+}
+
+.navbar {
+    background: teal;
+}
+
+
+
+.nav-link {
+    padding: 0 10px;
+    color: white !important;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.nav-link li {
+    padding: 0 10px;
+
+}
+
+/*-------navigation stops here*------/
+
+
+
+
+/*------Dropdown Menu----*/
+.navbar-toggler {
+    border: none !important;
+}
+
+.dropdown-menu {
+    background-color: teal !important;
+}
+
+.dropdown-item {
+    color: white !important;
+}
+
+
+
+/* carousel*/
+.carousel-inner > .carousel-item > img {
+    height: 450px;
+    width: 100%;
+    margin-top: 0;
+    z-index: 10;
+}
+
+/*-------orotechtalk----------*/
+.orotechtalk{
+    text-align: center;
+    text-indent:30px;
+    padding: 0 1rem;
+    width: 10% 30%;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    --patua
+    
+}
+
+/*-------main-----------*/\
+#main{
+    background-color: teal!important;
+}
+.column {
+    float: left;
+   height: auto;
+    padding: 10px;
+}
+
+.left {
+    width: 75%;
+}
+
+.right {
+    width: 25%;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+footer {
+    clear: both;
+    padding: 2rem;
+    text-align: center;
+    background: teal;
+    color: white;
+    margin-top: 2rem;
+}
+
+
+
+
+/* Media Queries */
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width:1000px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+
+    .carousel-inner > .carousel-item > img {
+        height: 400px;
+        width: 100%;
+        z-index: 10;
+    }
+    
+    .carousel-inner > .carousel-item > img:hover{
+        opacity: .5;
+        
+    }
+    
+    
+    
+    .column {
+        width: 100%;
+    }
+
+
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 480px) {
+    .navbar-nav a {
+        float: right;
+        width: 100%;
+       
+    }
+    
+    .carousel-inner > .carousel-item > img {
+        height: 200px;
+        width: 100%;
+        z-index: 10;
+    }
+
+
+    .column {
+        width: 100%;
+    }
+
+
+    footer {
+        clear: both
+    }
+
+}
